@@ -1,0 +1,266 @@
+li a:hover{
+    background-color: #00cb86;
+ 
+  
+    padding: 10px 15px;
+    
+}
+
+.About .karim{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jer {
+    display: flex;
+}
+.imager img{
+    width: 800px;
+    padding: 20px;
+    height: 400px;
+}
+.nextse p{
+   max-width: 500px;
+   line-height: 1.5;
+}
+
+mohamud{
+    background-color: white;
+    border-color: black;
+    padding: 5px 10px;
+}
+
+mohamud:hover{
+    background-color: #00cb86;
+}
+
+.services{
+    background-color: #EEE;
+}
+
+
+
+
+.services .karim{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Appointment .karim{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.kareem{
+    display: flex;
+    width: 90%;
+  
+    padding: 10px;
+    
+}
+
+.Ahmed{
+    background-color: white;
+    border-color: black;
+    padding: 10px 20px;
+    margin: 20px;
+    
+}
+.Ahmed:hover{
+    background-color: #00cb86;
+}
+
+.gallery .karim{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.images img{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    padding: 3px;
+    background-color: #f6f6f6;
+    border: 1px solid#DDD;
+   margin: 10px;
+   text-align: center;
+}
+
+
+.popup-overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.popup-box{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border: 1px solid #CCC;
+    padding: 20px;
+    z-index: 2000;
+    
+    
+}
+
+.popup-box h3{
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px;
+    color: var(--main--color);
+}
+
+.popup-box img{
+    max-width: 100%;
+     height: 400px;
+     width: 400px;
+    
+}
+
+.close-button{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: var(--main--color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid#DDD;
+    font-size: 20px;
+    color: #fff;
+}
+
+.Doctor .karim{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.boxao{
+    background-color: white;
+    margin: 5px;
+
+}
+
+.our-image img{
+     border: 1px solid #00cb86;
+     padding: 3px;
+     background-color: #f6f6f6;
+     border: 1px solid#DDD;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.our-image .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-image img:hover::before{
+    transform: translateX(0);
+    cursor: pointer;
+}
+
+.our-image img::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1ccad;
+    width: calc(100% - 10px);
+    height:calc(100% - 10px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: .3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.contact{
+    background-color: #EEE;
+}
+.contact h2{
+  
+    font-weight: bold;
+    color:#00cb86;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contact form{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
+   
+    
+    
+}
+
+input{
+    height: 40px;
+    width: 354px;
+    margin-bottom:15px ;
+    border-radius: 5px;
+    border: 1px solid #00cb86;
+}
+
+.contact form .left{
+    
+    width: 50%;
+}
+
+.contact form .right{
+   
+    width: 49%;
+}
+
+textarea{
+    height: 153px;
+    width: 353px;
+}
+
+.btn2{
+    color: #00cb86;
+    
+}
+
+.btn2:hover{
+    background-color: #00cb86;
+    color: #fff;
+}
+
+footer{
+    
+    padding: 20px;
+    text-align: center;
+    background-color: #00cb86;
+    color: #fff;
+}

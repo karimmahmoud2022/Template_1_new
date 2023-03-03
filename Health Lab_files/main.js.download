@@ -1,0 +1,46 @@
+let ourgallery = document.querySelectorAll(".images img");
+
+ourgallery.forEach(img=>{
+    img.addEventListener('click', (e)=> {
+      
+let overlay = document.createElement('div');
+    overlay.className='popup-overlay';
+    document.body.appendChild(overlay);
+
+    let popupBox = document.createElement('div');
+    popupBox.className='popup-box';
+   
+    if(img.alt !==null){
+        let imgHeading = document.createElement("h3");
+        let imgText = document.createTextNode(img.alt);
+        imgHeading.appendChild(imgText);
+        popupBox.appendChild(imgHeading);
+    }
+   
+
+    let popupimage = document.createElement('img');
+    popupimage.src = img.src;
+
+    popupBox.appendChild(popupimage);
+    document.body.appendChild(popupBox);
+
+         let closebutton = document.createElement("span");
+
+         let closebuttonText = document.createTextNode("X");
+
+         closebutton.appendChild(closebuttonText);
+
+         closebutton.className= 'close-button';
+
+         popupBox.appendChild(closebutton)
+
+    });
+});
+
+document.addEventListener("click" ,function(e){
+
+    if(e.target.className=== 'close-button'){
+              e.target.parentNode.remove();
+              document.querySelector(".popup-overlay").remove();
+    }
+});
